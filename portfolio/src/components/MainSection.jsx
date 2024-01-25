@@ -1,5 +1,7 @@
 import React from "react";
 import "./MainSection.css";
+import Resume from "./utils/Vijay-CV-10.01.pdf";
+import MyImg from "./utils/myPic.jpg";
 
 function MainSection() {
   return (
@@ -20,12 +22,12 @@ function MainSection() {
             building the future of full-stack applications! #JavaScriptDeveloper
           </p>
           <div className="actionButtons">
-            <button className="button1">Download My CV/Resume</button>
-            <button className="button2">See My Projects On Github</button>
+            <button className="button1" ><a href={Resume} download style={{textDecoration:"none"}}>Download My CV/Resume</a></button>
+            <button className="button2"><a href="https://github.com/VijayJsDev?tab=repositories" style={{textDecoration:"none"}}>See My Projects On Github</a></button>
           </div>
         </div>
         <div className="image">
-            <img src="" alt="vijay's picuture"></img>
+            <img src={MyImg} alt="vijay's picuture"></img>
         </div>
       </div>
     </section>

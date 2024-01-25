@@ -13,22 +13,30 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-.section{
-    background-color: var(--extra-light);
+
+.section {
+  background-color: var(--extra-light);
 }
-.sectionContainer{
-    min-height: 100vh;
-    max-width: var(--max-width);
-    margin: auto;
-    padding: 1rem;
-    display: grid;
+
+.sectionContainer {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr; /* Initially, a single column for mobile */
+  gap: 2rem;
+
+  @media only screen and (min-width: 768px) {
+    /* For tablets and larger devices */
     grid-template-columns: repeat(2, 1fr);
-    gap:4rem;
+  }
 }
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .subtitle{
     letter-spacing: 2px;
