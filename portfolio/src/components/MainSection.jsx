@@ -1,6 +1,6 @@
 import React from "react";
 import "./MainSection.css";
-import Resume from "./utils/Vijay-CV-10.01.pdf";
+import Resume from "./utils/Vijay-CV-31.01.pdf";
 import MyImg from "./utils/myPic.jpg";
 
 function MainSection() {
